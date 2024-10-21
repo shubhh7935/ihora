@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ihora</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="register">Register</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="select_your_language">Select Your Language</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="french">French</string>
+    <string name="welcome_to_ihora">Welcome to iHora</string>
+    <string name="logo">Logo</string>
+    <string name="perfect_weddings_made_easy">Perfect Weddings Made Easy!</string>
+    <string name="make_reservations">Make Reservations</string>
+    <string name="menu">Menu</string>
+    <string name="blog">Blog</string>
+    <string name="services">Services</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="banner_description">banner</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="back_button_description">back button</string>
+    <string name="bannertext2">What We do, We do With Passion</string>
+    <string name="know_more">Learn More</string>
+    <string name="title4">The Unrivaled Scenery, Unforgettable Wedding Program</string>
+</resources>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/headerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:paddingTop="25dp"
+                android:src="@drawable/ihora_logo"
+                android:contentDescription="@string/logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <Button
+                android:id="@+id/contactUsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"
+                android:backgroundTint="@color/pink"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toStartOf="@+id/menuButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/logoImageView" />
+
+            <ImageButton
+                android:id="@+id/menuButton"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/menu"
+                android:src="@drawable/ic_menu"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- First Banner -->
+                <ImageView
+                    android:id="@+id/fullWidthImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner_couple"
+                    android:contentDescription="@string/banner_description"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:id="@+id/banner_ring"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner_ring"
+                    android:contentDescription="@string/banner_description"
+                    android:layout_marginBottom="16dp" />
+
+
+                <TextView
+                    android:id="@+id/titleTextView"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/perfect_weddings_made_easy"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/reservationButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/make_reservations"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/pink"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp" />
+
+                <!-- Second Banner -->
+                <ImageView
+                    android:id="@+id/fullWidthImageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/better_together"
+                    android:contentDescription="@string/banner_description"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="16dp" />
+
+                <ImageView
+                    android:id="@+id/banner_birds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner_birds"
+                    android:contentDescription="@string/banner_description"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:id="@+id/titleTextView2"
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/bannertext2"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/descriptionTextView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/knowMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/know_more"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/pink"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/design_elem1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/design_element"
+                    android:contentDescription="@string/banner_description"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginBottom="16dp" />
+                <TextView
+                    android:id="@+id/titleTextView3"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Includes Various Product Categories"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/knowMore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/know_more"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/pink"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="8dp"
+                    tools:ignore="DuplicateIds" />
+
+                <GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    android:padding="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="24dp">
+
+                    <!-- First Image Box with Text -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/weddingWall_grid"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/weddingwall" />
+
+                        <TextView
+                            android:id="@+id/weddingWall_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wedding Wall"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                    <!-- Second Image Box with Text -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/metal_circles"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/metal_circles" />
+
+                        <TextView
+                            android:id="@+id/metal_circles_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Metal Circles"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                    <!-- Third Image Box with Text -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/chair"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/chair" />
+
+                        <TextView
+                            android:id="@+id/chair_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chair"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                    <!-- Fourth Image Box with Text -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/catering"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/catering" />
+
+                        <TextView
+                            android:id="@+id/catering_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Catering"
+                            android:textSize="14sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="8dp" />
+                    </LinearLayout>
+
+                </GridLayout>
+
+                <ImageView
+                    android:id="@+id/design_elem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/design_element"
+                    android:contentDescription="@string/banner_description"
+                    android:layout_marginBottom="16dp" />
+                <TextView
+                    android:id="@+id/titleTextView4"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/title4"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- GridLayout for the Image Grid -->
+                <GridLayout
+                    android:id="@+id/gridLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:alignmentMode="alignMargins"
+                    android:columnCount="2"
+                    android:rowCount="2"
+                    android:padding="16dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="24dp">
+
+                    <!-- Large Image on the Left -->
+                    <ImageView
+                        android:id="@+id/largeImage"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_columnSpan="1"
+                        android:layout_rowSpan="2"
+                        android:padding="5dp"
+                        android:src="@drawable/large_image_left"
+                        android:contentDescription="Large Image"
+                        android:scaleType="centerInside"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill" />
+
+                    <!-- First Small Image on the Right -->
+                    <ImageView
+                        android:id="@+id/smallImage1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/small_img_right"
+                        android:contentDescription="Small Image 1"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="fill" />
+
+                    <!-- Second Small Image on the Right -->
+                    <ImageView
+                        android:id="@+id/smallImage2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1"
+                        android:padding="5dp"
+                        android:src="@drawable/small_img_rb"
+                        android:contentDescription="Small Image 2"
+                        android:scaleType="centerInside"
+                        android:layout_gravity="fill" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/nav_menu" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
