@@ -26,7 +26,7 @@ Here are some screenshots from the app:
 To set up the project locally:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/ihora.git
+   git clone https://github.com/shubhh7935/ihora.git
 2. Open the project in Android Studio.
 3. Sync Gradle and build the project.
 4. Run the app on an emulator or physical device.
